@@ -13,9 +13,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<build>
-		<finalName>p2p-backstage</finalName>
-	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
@@ -79,6 +77,10 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
 
 		<!-- JSP相关 -->
 		<dependency>
@@ -122,4 +124,27 @@
 
 	</dependencies>
 
+	<!-- 添加插件 -->
+	<build>
+		<finalName>p2p-backstage</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<port>8081</port>
+					<path>/</path>
+					<uriEncoding>UTF-8</uriEncoding>
+					<!-- 配置虚拟路径 -->
+					<!-- 
+						<staticContextPath>/img</staticContextPath>
+						<staticContextDocbase>D:/uplaod/p2p</staticContextDocbase>
+					 -->
+					
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
 </project>
