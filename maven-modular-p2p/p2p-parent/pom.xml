@@ -38,6 +38,7 @@
 		<java-mail>1.5.6</java-mail>
 		<httpclient>4.5.10</httpclient>
 		<log4j>1.2.17</log4j>
+		<lombok>1.18.8</lombok>
 	</properties>
 
 	<dependencyManagement>
@@ -60,6 +61,14 @@
 				<artifactId>mybatis-spring</artifactId>
 				<version>${mybatis.spring.version}</version>
 			</dependency>
+			
+			<!--小辣椒 -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok}</version> 
+				<scope>provided</scope>
+			</dependency> 
 
 			<!-- 连接池 -->
 			<dependency>
