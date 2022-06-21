@@ -34,7 +34,7 @@
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<commons-io.version>1.3.2</commons-io.version>
 		<commons-fileupload.version>1.3.1</commons-fileupload.version>
-		<mysql.version>8.0.17</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 		<java-mail>1.5.6</java-mail>
 		<httpclient>4.5.10</httpclient>
 		<log4j>1.2.17</log4j>
